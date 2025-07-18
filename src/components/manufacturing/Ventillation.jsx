@@ -67,12 +67,13 @@ const Ventillation = () => {
         transition={{ duration: 0.8 }}
         className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-hidden"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1703260809882-5b0b8d6abc76?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1655039353512-ab38d6a37a92?q=80&w=589&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
         }}
       >
-        <SnowEffect />
+        {/* <SnowEffect /> */}
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto text-center">
           <motion.h1
@@ -87,7 +88,7 @@ const Ventillation = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-blue-200 font-medium"
+            className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-blue-100"
           >
             Smart ventilation systems ensure a continuous supply of fresh,
             filtered air while efficiently removing stale air and contaminants.
