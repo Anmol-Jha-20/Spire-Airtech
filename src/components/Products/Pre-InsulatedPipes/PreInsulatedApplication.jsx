@@ -1,19 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import HeatExchangerApplicationImage from "../../../assets/ApplicationImage.png";
 
-const HeatExchangerApplication = () => {
+const PreInsulatedPipeApplication = () => {
   const applications = [
-    "Healthcare & Hospitals",
-    "Pharmaceuticals",
-    "Chemical & Petrochemical",
-    "Biotechnology & R&D Facilities",
-    "Commercial Buildings",
-    "Food & Beverage Industry",
-    "Data Centers",
-    "Textile & Paper Plants",
-    "Automobile & Electronics Manufacturing",
-    "Education & Research Institutions",
+    "Commercial HVAC Systems",
+    "District Cooling/Heating Networks",
+    "Industrial Process Lines",
+    "Chilled Water Supply & Return Lines",
+    "Hot Water Distribution",
+    "Pharmaceutical & Cleanroom Facilities",
+    "Cold Storage & Refrigeration",
+    "Underground Pipe Routing",
+    "Green Building Projects",
   ];
 
   const containerVariants = {
@@ -100,7 +98,7 @@ const HeatExchangerApplication = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <img
-                    src={HeatExchangerApplicationImage}
+                    src="https://images.unsplash.com/photo-1686936393675-e86518c535a0?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     className="w-full"
                     alt="Heat Exchanger Application Image"
                   />
@@ -129,21 +127,16 @@ const HeatExchangerApplication = () => {
 
           <motion.div className="mb-12" variants={fadeInVariants}>
             <h3 className="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
-              "Upgrade to Next-Gen Thermal Efficiency with Spire Heat
-              Exchangers"
+              "Power your piping with precision."
             </h3>
 
             <motion.p
               className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8"
               variants={fadeInVariants}
             >
-              Experience precision-engineered heat transfer with Spire AirTech's
-              Heat Exchangers—customized for your industry, tested for
-              durability, and built for energy efficiency.{" "}
-              <span className="font-semibold text-gray-800">
-                Connect with our HVAC specialists today
-              </span>{" "}
-              to explore tailored solutions for your cooling and heating needs.
+              Upgrade your HVAC system with Spire Pre-Insulated Pipes—designed
+              for lasting thermal performance, energy savings, and installation
+              ease.
             </motion.p>
           </motion.div>
 
@@ -162,4 +155,4 @@ const HeatExchangerApplication = () => {
   );
 };
 
-export default HeatExchangerApplication;
+export default PreInsulatedPipeApplication;

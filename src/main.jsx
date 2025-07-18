@@ -17,6 +17,8 @@ import PharmaAHU from "./components/Products/PharmaAHU/PharmaAHU.jsx";
 import CleanroomAHU from "./components/Products/CleanroomAHU/CleanroomAHU.jsx";
 import FloorMountedAHU from "./components/Products/FloorMountedAHU/FloorMountedAHU.jsx";
 import AirConditioning from "./components/manufacturing/AirConditioning.jsx";
+import Ventillation from "./components/manufacturing/Ventillation.jsx";
+import PreInsulatedPipes from "./components/Products/Pre-InsulatedPipes/PreInsulatedPipes.jsx";
 
 const router = createBrowserRouter([
   {
@@ -74,6 +76,14 @@ const router = createBrowserRouter([
       {
         path: "/air-conditioning",
         element: <AirConditioning />,
+      },
+      {
+        path: "/ventillation",
+        element: <Ventillation />,
+      },
+      {
+        path: "/pre-insulated-pipes",
+        element: <PreInsulatedPipes />,
       },
     ],
   },

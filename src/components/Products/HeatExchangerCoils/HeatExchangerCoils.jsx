@@ -5,6 +5,7 @@ import HeatExchangerTypes from "./HeatExchangerTypes";
 import KeyHighlights from "./KeyHighlight";
 import HeatExchangerApplication from "./HeatExchangerApplication.jsx";
 import FAQComponent from "./FAQ.jsx";
+import HeatExchangerImage from "../../../assets/HeatExchanger.png";
 
 const HeatExchangerCoils = () => {
   return (
@@ -21,7 +22,8 @@ const HeatExchangerCoils = () => {
             >
               <div className="bg-white rounded-lg shadow-xl p-8 overflow-hidden">
                 <img
-                  src="https://zecoaircon.com/wp-content/uploads/2025/07/coils.webp"
+                  src={HeatExchangerImage}
+                  className="rounded"
                   alt="Heat Exchanger Coils"
                 />
               </div>
@@ -63,20 +65,18 @@ const HeatExchangerCoils = () => {
                 className="text-gray-700 leading-relaxed text-lg space-y-4"
               >
                 <p>
-                  At Spire AirTech, we redefine heat transfer efficiency with
-                  our AHRI 410-certified Heat Exchangers—engineered for
-                  precision, reliability, and performance. Designed to deliver
-                  superior indoor thermal comfort, these high-performance units
-                  ensure seamless heat transfer between fluids without
-                  cross-contamination.
-                </p>
-
-                <p>
-                  Each unit is tested up to 450 PSIG and custom-built based on
-                  project requirements and logistics. As leading HVAC suppliers
-                  in India, we offer tailored solutions for industrial and
-                  commercial applications, combining durability, energy savings,
-                  and compliance into every design.
+                  Heat Exchanger Coils are critical components in HVAC (Heating,
+                  Ventilation, and Air Conditioning) systems, designed to
+                  transfer heat between two fluids—typically air and a
+                  refrigerant or water—without allowing them to mix. These coils
+                  are made from highly conductive materials such as copper tubes
+                  with aluminum or copper fins to maximize surface area and
+                  enhance thermal efficiency.Heat exchanger coils function in
+                  both heating and cooling applications: in cooling mode, they
+                  absorb heat from the air passing over the coils and transfer
+                  it to a cooler fluid (usually a refrigerant or chilled water);
+                  in heating mode, they do the opposite, transferring heat from
+                  a hot fluid to the air.
                 </p>
               </motion.div>
 
@@ -95,9 +95,9 @@ const HeatExchangerCoils = () => {
           </div>
         </div>
       </div>
-      <ProductUSPs />
+      {/* <ProductUSPs /> */}
       <HeatExchangerTypes />
-      <KeyHighlights />
+      {/* <KeyHighlights /> */}
       <HeatExchangerApplication />
       <FAQComponent />
     </>

@@ -41,7 +41,7 @@ function Header() {
               ? "w-[700px]"
               : "w-[600px]"
             : "w-[300px]"
-        } shadow-xl mt-2 z-50`}
+        } shadow-xl z-50`}
       >
         <div className="flex">
           {/* Left Column - Categories */}

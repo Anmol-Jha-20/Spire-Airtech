@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight, Snowflake, Zap, Shield, Award } from "lucide-react";
 import SmartAHUImage from "../../assets/SmartAHU.png";
+import EvaporativeCoolingUnit from "../../assets/EvaporativeCoolingUnit.png";
 
 function AWU() {
   const products = [
@@ -12,16 +13,15 @@ function AWU() {
         {
           title: "Single Stage Air Washer",
           description:
-            "A Smart AHU (Smart Air Handling Unit) is an advanced air handling system equipped with sensors, automation, and IoT technology to optimize air quality, energy efficiency, and system performance.",
+            "A Single Stage Air Washer is an air cooling and cleaning system that uses water to both lower air temperature and remove dust or impurities. Warm air is drawn through a chamber where it passes over water sprays or wet media, causing evaporation that cools the air while also washing out contaminants. This process adds moisture to the air, making it ideal for industrial or commercial use in hot, dry climates.",
           image: SmartAHUImage,
           specs: ["5 Star Rating", "Inverter Technology", "Smart Controls"],
         },
         {
           title: "Spire Indirect Direct Evaporative Cooling Unit",
           description:
-            "A Pharma AHU (Pharmaceutical Air Handling Unit) is a specialized air handling unit designed to meet the strict environmental and cleanliness standards required in pharmaceutical manufacturing.",
-          image:
-            "https://5.imimg.com/data5/SELLER/Default/2022/8/LP/CB/ID/103304362/centralized-air-conditioning-system-500x500.jpg",
+            "An Indirect-Direct Evaporative Cooling (IDEC) unit is an energy-efficient system that cools air in two stages. First, it pre-cools outside air without adding moisture using a heat exchanger (indirect stage). Then, it further cools the air by passing it through a wet medium that adds some humidity (direct stage).",
+          image: EvaporativeCoolingUnit,
           specs: ["Automated Control", "Energy Saving", "Large Coverage"],
         },
       ],

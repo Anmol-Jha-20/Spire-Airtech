@@ -1,14 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import AirDistributionProductUSPs from "./AirDistributionProductUSPs";
-import FAQComponent from "../HeatExchangerCoils/FAQ.jsx";
-import AirDistributionTypes from "./AirDistributionTypes.jsx";
-import AirDistributionKeyHighlights from "./AirDistributionKeyHighlight.jsx";
-import AirDistributionApplication from "./AirDistributionApplication.jsx";
-import PrecisionMaterials from "./AirDistributionPrecision.jsx";
-import FAQAirDistribution from "./AirDistributionFAQs.jsx";
+import PreInsulatedPipeImage from "../../../assets/PreInsulatedPipes.png";
+import WhyPreInsulatedPipe from "./WhyPreInsulated";
+import PreInsulatedPipeApplication from "./PreInsulatedApplication";
+import PipeInsulationInterface from "./PipeInsulationInterface";
 
-const AirDistributionDucts = () => {
+const PreInsulatedPipes = () => {
   return (
     <>
       <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -22,10 +19,7 @@ const AirDistributionDucts = () => {
               className="relative"
             >
               <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1701074939685-7c182a8ca8f5?q=80&w=1034&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Air Distribution Ducts"
-                />
+                <img src={PreInsulatedPipeImage} alt="Pre Insulated Pipes" />
               </div>
             </motion.div>
 
@@ -44,7 +38,7 @@ const AirDistributionDucts = () => {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="text-4xl md:text-4xl lg:text-5xl font-bold text-blue-800 mb-6"
                 >
-                  Air Distribution Ducts
+                  Pre-Insulated Pipes
                 </motion.h1>
 
                 <motion.p
@@ -53,7 +47,7 @@ const AirDistributionDucts = () => {
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className="text-xl md:text-2xl text-gray-600 font-medium mb-8"
                 >
-                  "Engineered Ductwork for Superior Air Delivery"
+                  "Efficient Thermal Protection in Every Length"
                 </motion.p>
               </div>
 
@@ -65,14 +59,14 @@ const AirDistributionDucts = () => {
                 className="text-gray-700 leading-relaxed text-lg space-y-4"
               >
                 <p>
-                  Air Distribution Ducts are channels used in HVAC systems to
-                  deliver conditioned air (cooled or heated) from the air
-                  handling unit to different areas within a building. Made from
-                  materials like galvanized steel, aluminum, or flexible
-                  plastic, these ducts ensure even air distribution, maintain
-                  indoor comfort, and help regulate temperature and air quality
-                  efficiently. Proper design and insulation of ducts also reduce
-                  energy loss and enhance system performance.
+                  Pre-Insulated Pipes are piping systems designed with built-in
+                  thermal insulation to minimize heat loss or gain during fluid
+                  transport. Commonly used in HVAC, district heating, and
+                  cooling systems, they consist of a carrier pipe, insulating
+                  layer (usually polyurethane foam), and a protective outer
+                  jacket. These pipes improve energy efficiency, reduce
+                  installation time, and offer long-term durability in both
+                  underground and above-ground applications.
                 </p>
               </motion.div>
 
@@ -91,14 +85,11 @@ const AirDistributionDucts = () => {
           </div>
         </div>
       </div>
-      {/* <AirDistributionProductUSPs /> */}
-      <AirDistributionTypes />
-      {/* <AirDistributionKeyHighlights /> */}
-      <PrecisionMaterials />
-      <AirDistributionApplication />
-      <FAQAirDistribution />
+      <WhyPreInsulatedPipe />
+      <PipeInsulationInterface />
+      <PreInsulatedPipeApplication />
     </>
   );
 };
 
-export default AirDistributionDucts;
+export default PreInsulatedPipes;
