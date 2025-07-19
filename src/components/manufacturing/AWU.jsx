@@ -2,8 +2,10 @@ import React from "react";
 import { ArrowRight, Snowflake, Zap, Shield, Award } from "lucide-react";
 import SmartAHUImage from "../../assets/SmartAHU.png";
 import EvaporativeCoolingUnit from "../../assets/EvaporativeCoolingUnit.png";
+import { useNavigate } from "react-router-dom";
 
 function AWU() {
+  const navigate = useNavigate();
   const products = [
     {
       category: "AWU (Air Washer Unit)",
@@ -16,6 +18,7 @@ function AWU() {
             "A Single Stage Air Washer is an air cooling and cleaning system that uses water to both lower air temperature and remove dust or impurities. Warm air is drawn through a chamber where it passes over water sprays or wet media, causing evaporation that cools the air while also washing out contaminants. This process adds moisture to the air, making it ideal for industrial or commercial use in hot, dry climates.",
           image: SmartAHUImage,
           specs: ["5 Star Rating", "Inverter Technology", "Smart Controls"],
+          link: "/single-stage-air-washer",
         },
         {
           title: "Spire Indirect Direct Evaporative Cooling Unit",
@@ -23,6 +26,7 @@ function AWU() {
             "An Indirect-Direct Evaporative Cooling (IDEC) unit is an energy-efficient system that cools air in two stages. First, it pre-cools outside air without adding moisture using a heat exchanger (indirect stage). Then, it further cools the air by passing it through a wet medium that adds some humidity (direct stage).",
           image: EvaporativeCoolingUnit,
           specs: ["Automated Control", "Energy Saving", "Large Coverage"],
+          link: "/spire-indirect-direct-evaporative-cooling-unit",
         },
       ],
     },
@@ -88,7 +92,10 @@ function AWU() {
                   </div>
 
                   {/* CTA Button */}
-                  <button className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl font-medium">
+                  <button
+                    onClick={() => navigate(product.link)}
+                    className="w-full sm:w-auto cursor-pointer inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl font-medium"
+                  >
                     <span>Learn More</span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>

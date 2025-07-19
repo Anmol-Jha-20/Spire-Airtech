@@ -21,6 +21,8 @@ import Ventillation from "./components/manufacturing/Ventillation.jsx";
 import PreInsulatedPipes from "./components/Products/Pre-InsulatedPipes/PreInsulatedPipes.jsx";
 import CeilingSuspendedAhu from "./components/Products/Ceiling Suspended Ahu/CeilingSuspendedAhu.jsx";
 import TFA from "./components/Products/tfa/TFA.jsx";
+import SingleStageAirWasher from "./components/Products/SingleStageAirWasher/SingleStageAirWasher.jsx";
+import SpireIndirectDirectUnit from "./components/Products/SpireIndirectDirectUnit/SpireIndirectDirectUnit.jsx";
 
 const router = createBrowserRouter([
   {
@@ -82,6 +84,14 @@ const router = createBrowserRouter([
       {
         path: "/tfa",
         element: <TFA />,
+      },
+      {
+        path: "/single-stage-air-washer",
+        element: <SingleStageAirWasher />,
+      },
+      {
+        path: "/spire-indirect-direct-evaporative-cooling-unit",
+        element: <SpireIndirectDirectUnit />,
       },
       {
         path: "/air-conditioning",
