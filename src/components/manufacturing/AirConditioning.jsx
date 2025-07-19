@@ -7,6 +7,8 @@ import FanCoilUnitImage from "../../assets/FanCoilsUnit.png";
 import IndoorAirQualityImage from "../../assets/IndoorAirQuality.png";
 import OutdoorAirQualityImage from "../../assets/OutdoorAirQuality.png";
 import PharmaImage from "../../assets/PharmaImage.png";
+import { useNavigate } from "react-router-dom";
+import SmartAirHandlingImage from "../../assets/SmartAirHandling.jpeg";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -46,6 +48,7 @@ const slideIn = {
 };
 
 function AirConditioning() {
+  const navigate = useNavigate();
   const features = [
     {
       icon: <Snowflake className="w-6 h-6" />,
@@ -81,6 +84,7 @@ function AirConditioning() {
             "A Smart AHU (Smart Air Handling Unit) is an advanced air handling system equipped with sensors, automation, and IoT technology to optimize air quality, energy efficiency, and system performance.",
           image: SmartAHUImage,
           specs: ["5 Star Rating", "Inverter Technology", "Smart Controls"],
+          link: "/smart-ahu",
         },
         {
           title: "Pharma AHU",
@@ -88,6 +92,7 @@ function AirConditioning() {
             "A Pharma AHU (Pharmaceutical Air Handling Unit) is a specialized air handling unit designed to meet the strict environmental and cleanliness standards required in pharmaceutical manufacturing.",
           image: PharmaImage,
           specs: ["Automated Control", "Energy Saving", "Large Coverage"],
+          link: "/pharma-ahu",
         },
         {
           title: "Cleanroom AHU",
@@ -96,6 +101,7 @@ function AirConditioning() {
           image:
             "https://adz-trax.com/website-preview/aumex-cleanroom/wp-content/uploads/2025/01/ot-air-handling-unit-500x500-2-1.webp",
           specs: ["Commercial Grade", "Efficient Airflow", "Easy Installation"],
+          link: "/cleanroom-ahu",
         },
         {
           title: "Floor Mounted AHU",
@@ -104,6 +110,7 @@ function AirConditioning() {
           image:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmnlg1cvFddp_H6MGmnAJu5vVA-6iEo_9Org&s",
           specs: ["Commercial Grade", "Efficient Airflow", "Easy Installation"],
+          link: "/floor-mounted-ahu",
         },
         {
           title: "Ceiling Suspended AHU",
@@ -112,6 +119,7 @@ function AirConditioning() {
           image:
             "https://5.imimg.com/data5/SELLER/Default/2024/1/377313865/HP/LB/JS/72632029/double-skin-ceiling-suspended-air-handling-unit.jpg",
           specs: ["Commercial Grade", "Efficient Airflow", "Easy Installation"],
+          link: "/ceiling-suspended-ahu",
         },
         {
           title: "TFA (With Energy Recovery Unit)",
@@ -120,6 +128,7 @@ function AirConditioning() {
           image:
             "https://5.imimg.com/data5/GT/KY/VA/SELLER-14849786/xfresh-air-handling-unit-png-pagespeed-ic-ajpk2-7llv-500x500.png",
           specs: ["Commercial Grade", "Efficient Airflow", "Easy Installation"],
+          link: "/tfa",
         },
       ],
     },
@@ -233,7 +242,10 @@ function AirConditioning() {
                     </div>
 
                     {/* CTA Button */}
-                    <button className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl font-medium">
+                    <button
+                      onClick={() => navigate(product.link)}
+                      className="w-full sm:w-auto inline-flex cursor-pointer items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl font-medium"
+                    >
                       <span>Learn More</span>
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </button>

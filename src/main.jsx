@@ -19,6 +19,8 @@ import FloorMountedAHU from "./components/Products/FloorMountedAHU/FloorMountedA
 import AirConditioning from "./components/manufacturing/AirConditioning.jsx";
 import Ventillation from "./components/manufacturing/Ventillation.jsx";
 import PreInsulatedPipes from "./components/Products/Pre-InsulatedPipes/PreInsulatedPipes.jsx";
+import CeilingSuspendedAhu from "./components/Products/Ceiling Suspended Ahu/CeilingSuspendedAhu.jsx";
+import TFA from "./components/Products/tfa/TFA.jsx";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +74,14 @@ const router = createBrowserRouter([
       {
         path: "/floor-mounted-ahu",
         element: <FloorMountedAHU />,
+      },
+      {
+        path: "/ceiling-suspended-ahu",
+        element: <CeilingSuspendedAhu />,
+      },
+      {
+        path: "/tfa",
+        element: <TFA />,
       },
       {
         path: "/air-conditioning",

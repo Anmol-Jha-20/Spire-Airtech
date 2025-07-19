@@ -10,6 +10,8 @@ import {
   BarChart3,
 } from "lucide-react";
 import PharmaAHUKeyHighlights from "./PharmaAHUKeyHighlight.jsx";
+import PharmaAHUImage from "../../../assets/PharmaAHU.jpeg";
+import PharmaAHUApplication from "./PharmaAHUApplication.jsx";
 
 function PharmaAHU() {
   return (
@@ -22,11 +24,9 @@ function PharmaAHU() {
         description={
           "Pharma AHUs, also known as Hygienic Air Handling Units, are engineered to meet the strict demands of cleanroom environments across pharmaceutical, biotech, healthcare, and life sciences industries. With a focus on contamination control, microbial resistance, and full regulatory compliance, these units deliver highly filtered, temperature-controlled air to the most sensitive areas. Designed for durability, energy efficiency, and uncompromising hygiene, Pharma AHUs are a cornerstone of controlled environmental solutions."
         }
-        image={
-          "https://zecoaircon.com/wp-content/uploads/2024/12/Pharma-AHU-1-1024x382-1.png"
-        }
+        image={PharmaAHUImage}
       />
-      <TempProductUSPs
+      {/* <TempProductUSPs
         heading={"Engineered for Compliance. Designed for Purity"}
         icon1={Shield}
         title1={"Hygienic Construction"}
@@ -59,7 +59,8 @@ function PharmaAHU() {
           "UV-C lamps, DOP/PAO ports, and pressure gauges for real-time monitoring and contamination control."
         }
       />
-      <PharmaAHUKeyHighlights />
+      <PharmaAHUKeyHighlights /> */}
+      <PharmaAHUApplication />
     </>
   );
 }

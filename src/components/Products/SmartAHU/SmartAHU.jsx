@@ -12,6 +12,7 @@ import TempProductUSPs from "../PharmaAHU/ProductUSPs.jsx";
 import SmartAHUKeyHighlights from "./SmartAHUKeyHighlights.jsx";
 import SmartAHUApplication from "./SmartAHUApplication.jsx";
 import SmartAHUFAQComponent from "./SmartAHUFAQs.jsx";
+import SmartAHUImage from "../../../assets/SmartAHU.png";
 
 const SmartAHU = () => {
   return (
@@ -27,10 +28,7 @@ const SmartAHU = () => {
               className="relative"
             >
               <div className="bg-white rounded-lg shadow-xl overflow-hidden">
-                <img
-                  src="https://zecoaircon.com/wp-content/uploads/2024/12/Smart-AHU-2-1024x705-1.png"
-                  alt="Air Distribution Ducts"
-                />
+                <img src={SmartAHUImage} alt="Smart AHU Image" />
               </div>
             </motion.div>
 
@@ -97,7 +95,7 @@ const SmartAHU = () => {
           </div>
         </div>
       </div>
-      <TempProductUSPs
+      {/* <TempProductUSPs
         heading={"Smart & Cost Efficient AHU"}
         icon1={Shield}
         title1={"IoT-Enabled Intelligence"}
@@ -129,8 +127,8 @@ const SmartAHU = () => {
         description6={
           "Smart AHU is designed to be versatile, with airflow capacities ranging from 1,000 CFM to 60,000+ CFM. Whether used in a small office or a large hospital complex, its modular design and customizable components ensure perfect adaptability for varied project scales and HVAC needs."
         }
-      />
-      <SmartAHUKeyHighlights />
+      /> */}
+      {/* <SmartAHUKeyHighlights /> */}
       <SmartAHUApplication />
       <SmartAHUFAQComponent />
     </>
