@@ -23,6 +23,11 @@ import CeilingSuspendedAhu from "./components/Products/Ceiling Suspended Ahu/Cei
 import TFA from "./components/Products/tfa/TFA.jsx";
 import SingleStageAirWasher from "./components/Products/SingleStageAirWasher/SingleStageAirWasher.jsx";
 import SpireIndirectDirectUnit from "./components/Products/SpireIndirectDirectUnit/SpireIndirectDirectUnit.jsx";
+import VRFAirconditioning from "./components/Projects/VRFAirconditioning.jsx";
+import Chillers from "./components/Projects/Chillers.jsx";
+import FdvFan from "./components/Projects/FdvFan.jsx";
+import DuctedSplitAirConditioner from "./components/Projects/DuctedSplitAirconditioner.jsx";
+import WaterCooledChiller from "./components/Projects/WaterCooledChiller.jsx";
 
 const router = createBrowserRouter([
   {
@@ -104,6 +109,26 @@ const router = createBrowserRouter([
       {
         path: "/pre-insulated-pipes",
         element: <PreInsulatedPipes />,
+      },
+      {
+        path: "/vrf-airconditioning",
+        element: <VRFAirconditioning />,
+      },
+      {
+        path: "/chillers",
+        element: <Chillers />,
+      },
+      {
+        path: "/water-cooled-dx-unit",
+        element: <FdvFan />,
+      },
+      {
+        path: "/ducted-split-airconditioners",
+        element: <DuctedSplitAirConditioner />,
+      },
+      {
+        path: "/water-cooled-chiller",
+        element: <WaterCooledChiller />,
       },
     ],
   },

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown, Search, Phone, Menu, X, Plus } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
@@ -325,44 +326,47 @@ function Header() {
               onMouseEnter={() => setHoveredDropdown("projects")}
               onMouseLeave={() => setHoveredDropdown(null)}
             >
-              <button
-                onClick={() => navigate("/projects")}
-                className="flex items-center text-gray-700 hover:text-red-500 font-medium transition-colors"
-              >
+              <button className="flex items-center text-gray-700 hover:text-red-500 font-medium transition-colors">
                 PROJECTS
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
 
               {hoveredDropdown === "projects" && (
                 <div
-                  className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50"
+                  className="absolute top-full left-0 w-48 bg-white rounded-md shadow-lg py-2 z-50"
                   onMouseEnter={() => setHoveredDropdown("projects")}
                   onMouseLeave={() => setHoveredDropdown(null)}
                 >
-                  <a
-                    href="#air-conditioning"
+                  <Link
+                    to={"/chillers"}
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    CHILLERS
-                  </a>
-                  <a
-                    href="#air-distribution"
+                    AIR COOLER CHILLERS
+                  </Link>
+                  <Link
+                    to={"/vrf-airconditioning"}
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    VRV AIRCONDITIONING SYSTEMS
-                  </a>
-                  <a
-                    href="#pre-insulated-pipes"
+                    VRF/V AIRCONDITIONING SYSTEMS
+                  </Link>
+                  <Link
+                    to={"/water-cooled-dx-unit"}
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    FDV and FAN
-                  </a>
-                  <a
-                    href="#pre-insulated-pipes"
+                    WATER COOLED DX UNIT
+                  </Link>
+                  <Link
+                    to={"/ducted-split-airconditioners"}
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     DUCTED SPLIT AIRCONDITIONERS
-                  </a>
+                  </Link>
+                  <Link
+                    to={"/water-cooled-chiller"}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    WATER COOLED CHILLER
+                  </Link>
                 </div>
               )}
             </div>
@@ -377,10 +381,7 @@ function Header() {
                 setHoveredSubcategory(null);
               }}
             >
-              <button
-                onClick={() => navigate("/manufacturing")}
-                className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors"
-              >
+              <button className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors">
                 MANUFACTURING
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
@@ -486,30 +487,41 @@ function Header() {
                 </button>
                 {isProductsOpen && (
                   <div className="ml-4 mt-2 space-y-2">
-                    <a
-                      href="#air-conditioning"
-                      className="block py-1 text-sm text-gray-600"
+                    <Link
+                      to={"/chillers"}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                      CHILLERS
-                    </a>
-                    <a
-                      href="#air-distribution"
-                      className="block py-1 text-sm text-gray-600"
+                      AIR COOLER CHILLERS
+                    </Link>
+                    <Link
+                      to={"/vrf-airconditioning"}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      VRV AIRCONDITIONING SYSTEMS
-                    </a>
-                    <a
-                      href="#pre-insulated-pipes"
-                      className="block py-1 text-sm text-gray-600"
+                      VRF/V AIRCONDITIONING SYSTEMS
+                    </Link>
+                    <Link
+                      to={"/water-cooled-dx-unit"}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      FDV and FAN
-                    </a>
-                    <a
-                      href="#pre-insulated-pipes"
-                      className="block py-1 text-sm text-gray-600"
+                      WATER COOLED DX UNIT
+                    </Link>
+                    <Link
+                      to={"/ducted-split-airconditioners"}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={() => setIsMobileMenuOpen(false)}
                     >
                       DUCTED SPLIT AIRCONDITIONERS
-                    </a>
+                    </Link>
+                    <Link
+                      to={"/water-cooled-chiller"}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      WATER COOLED CHILLER
+                    </Link>
                   </div>
                 )}
               </div>
