@@ -155,14 +155,18 @@ const ServicesPage = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center">
+              {/* <div className="bg-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center">
                   <Shield className="h-24 w-24 text-blue-600 mx-auto mb-4" />
                   <p className="text-blue-800 font-medium">
                     AMC Services Illustration
                   </p>
                 </div>
-              </div>
+              </div> */}
+              <img
+                src="https://images.unsplash.com/photo-1642749776312-aa42ce20c9f5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Annual Maintenance"
+              />
             </div>
           </div>
         </div>
@@ -221,14 +225,18 @@ const ServicesPage = () => {
             </div>
 
             <div className="lg:order-1">
-              <div className="bg-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center">
+              {/* <div className="bg-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center">
                   <Wrench className="h-24 w-24 text-blue-600 mx-auto mb-4" />
                   <p className="text-blue-800 font-medium">
                     OCR Services Illustration
                   </p>
                 </div>
-              </div>
+              </div> */}
+              <img
+                src="https://img.freepik.com/free-photo/repairman-doing-air-conditioner-service_1303-26541.jpg?t=st=1753207991~exp=1753211591~hmac=3eaf579e09d1f2ffe76696d6b6110a6a96479ba6f8e19b8c6e982759f35315d1&w=996"
+                alt="On Call Repair"
+              />
             </div>
           </div>
         </div>
@@ -274,14 +282,18 @@ const ServicesPage = () => {
             </div>
 
             <div>
-              <div className="bg-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center">
+              {/* <div className="bg-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center">
                   <Clock className="h-24 w-24 text-blue-600 mx-auto mb-4" />
                   <p className="text-blue-800 font-medium">
                     PMS Services Illustration
                   </p>
                 </div>
-              </div>
+              </div> */}
+              <img
+                src="https://img.freepik.com/free-photo/checking-conditioner_1098-17787.jpg?t=st=1753208609~exp=1753212209~hmac=f9da5f3425236eec91726f281f3a037f760a57458b854044fcbf5b2926fa0c02&w=996"
+                alt="Preventative Maintenance Service"
+              />
             </div>
           </div>
         </div>
@@ -354,13 +366,17 @@ const ServicesPage = () => {
               </p>
             </div>
 
-            <div className="bg-blue-100 rounded-2xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center">
+            <div className="rounded-2xl p-8 h-96 flex items-center justify-center">
+              {/* <div className="text-center">
                 <Star className="h-24 w-24 text-blue-600 mx-auto mb-4" />
                 <p className="text-blue-800 font-medium">
                   Our USP Illustration
                 </p>
-              </div>
+              </div> */}
+              <img
+                src="https://smallbusiness-staging.s3.amazonaws.com/uploads/2017/10/USP-121017-1568x1045.jpeg"
+                alt="USP"
+              />
             </div>
           </div>
 
