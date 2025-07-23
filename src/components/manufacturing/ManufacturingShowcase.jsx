@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import ManufacturingManImage from "../../assets/ManufacturingManImage.png";
+import CncImage from "../../assets/CncImage.png";
 
 const AnimatedCounter = ({ target, duration = 2000, suffix = "" }) => {
   const [count, setCount] = useState(0);
@@ -65,7 +67,7 @@ export default function ManufacturingShowcase() {
                 {/* Main Factory Image */}
                 <div className="md:col-span-2">
                   <img
-                    src="https://zecoaircon.com/wp-content/uploads/2022/07/Factory-Manufacturing-5-scaled.jpg"
+                    src={ManufacturingManImage}
                     alt="Modern manufacturing facility with advanced machinery and workers"
                     className="w-full h-64 object-cover rounded-lg shadow-md"
                   />
@@ -74,7 +76,7 @@ export default function ManufacturingShowcase() {
                 {/* Side Images */}
                 <div className="grid grid-cols-1 gap-4">
                   <img
-                    src="https://zecoaircon.com/wp-content/uploads/2022/07/Factory-Manufacturing-4-1024x683.jpg"
+                    src={CncImage}
                     alt="CNC machinery in operation"
                     className="w-full h-32 object-cover rounded-lg shadow-md"
                   />
