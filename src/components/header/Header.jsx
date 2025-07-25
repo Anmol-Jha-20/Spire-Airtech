@@ -18,7 +18,6 @@ function Header() {
     Ventillation: [],
     "Heat Exchanger Coils": [],
     "Air Distribution Ducts": [],
-    "Pre-Insulated Pipes": [],
   };
 
   const ManufacturingDropdown = ({ data }) => {
@@ -153,7 +152,7 @@ function Header() {
     <div>
       <button
         onClick={() => toggleMobileMenu(title)}
-        className="w-full flex items-center justify-between px-3 py-2 text-gray-700 hover:bg-gray-50"
+        className="w-full flex items-center justify-between px-3 py-2 text-gray-700 cursor-pointer hover:bg-gray-50"
       >
         <span>{title}</span>
         <ChevronDown
@@ -182,7 +181,7 @@ function Header() {
     <div>
       <button
         onClick={() => toggleMobileMenu(title)}
-        className="w-full flex items-center justify-between py-2 font-medium text-gray-700 hover:bg-gray-50"
+        className="w-full flex items-center justify-between py-2 font-medium cursor-pointer text-gray-700 hover:bg-gray-50"
       >
         <span>{title}</span>
         <ChevronDown
@@ -208,7 +207,7 @@ function Header() {
                       setIsMobileMenuOpen(false);
                     }
                   }}
-                  className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                  className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 cursor-pointer"
                 >
                   <span>{category}</span>
                   {hasSub && (
@@ -301,7 +300,7 @@ function Header() {
           <nav className="hidden md:flex space-x-8">
             <button
               onClick={() => navigate("/")}
-              className="text-gray-700 hover:text-red-500 font-medium transition-colors"
+              className="text-gray-700 hover:text-red-500 font-medium transition-colors cursor-pointer"
             >
               HOME
             </button>
@@ -314,7 +313,7 @@ function Header() {
             >
               <button
                 onClick={() => navigate("/about-us")}
-                className="flex items-center text-gray-700 hover:text-red-500 font-medium transition-colors"
+                className="flex items-center text-gray-700 hover:text-red-500 font-medium transition-colors cursor-pointer"
               >
                 ABOUT
               </button>
@@ -331,7 +330,7 @@ function Header() {
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
 
-              {hoveredDropdown === "projects" && (
+              {/* {hoveredDropdown === "projects" && (
                 <div
                   className="absolute top-full left-0 w-48 bg-white rounded-md shadow-lg py-2 z-50"
                   onMouseEnter={() => setHoveredDropdown("projects")}
@@ -368,6 +367,55 @@ function Header() {
                     WATER COOLED CHILLER
                   </Link>
                 </div>
+              )} */}
+              {hoveredDropdown === "projects" && (
+                <div
+                  className="absolute top-full left-0 w-56 bg-white rounded-md shadow-lg py-2 z-50"
+                  onMouseEnter={() => setHoveredDropdown("projects")}
+                  onMouseLeave={() => setHoveredDropdown(null)}
+                >
+                  {/* Chillers with Submenu */}
+                  <div className="relative group">
+                    <div className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer flex justify-between items-center">
+                      CHILLERS
+                      <ChevronDown className="w-4 h-4 ml-2" />
+                    </div>
+                    <div className="absolute top-0 left-full ml-1 w-56 bg-white rounded-md shadow-lg py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-50">
+                      <Link
+                        to="/chillers"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        AIR COOLED CHILLER
+                      </Link>
+                      <Link
+                        to="/water-cooled-chiller"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        WATER COOLED CHILLER
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Other Project Links */}
+                  <Link
+                    to="/vrf-airconditioning"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    VRF/V AIRCONDITIONING SYSTEMS
+                  </Link>
+                  <Link
+                    to="/water-cooled-dx-unit"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    WATER COOLED DX UNIT
+                  </Link>
+                  <Link
+                    to="/ducted-split-airconditioners"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    DUCTED SPLIT AIRCONDITIONERS
+                  </Link>
+                </div>
               )}
             </div>
 
@@ -393,23 +441,23 @@ function Header() {
 
             <button
               onClick={() => navigate("/services")}
-              className="text-gray-700 hover:text-red-500 font-medium transition-colors"
+              className="text-gray-700 hover:text-red-500 font-medium transition-colors cursor-pointer"
             >
               SERVICES
             </button>
 
             <button
               onClick={() => navigate("/contact-us")}
-              className="text-gray-700 hover:text-red-500 font-medium transition-colors"
+              className="text-gray-700 hover:text-red-500 font-medium transition-colors cursor-pointer"
             >
               CONTACT
             </button>
           </nav>
 
           <div className="flex items-center space-x-4">
-            <button className="hidden md:block p-2 text-gray-500 hover:text-gray-700">
+            {/* <button className="hidden md:block p-2 text-gray-500 hover:text-gray-700">
               <Search className="h-5 w-5" />
-            </button>
+            </button> */}
 
             <a
               href="tel:+919311778119"
@@ -438,7 +486,10 @@ function Header() {
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t">
             <div className="px-4 py-2 space-y-2">
               <button
-                onClick={() => navigate("/")}
+                onClick={() => {
+                  navigate("/");
+                  setIsMobileMenuOpen(false);
+                }}
                 className="block py-2 text-gray-700 hover:text-red-500 font-medium"
               >
                 HOME
@@ -487,7 +538,7 @@ function Header() {
                 </button>
                 {isProductsOpen && (
                   <div className="ml-4 mt-2 space-y-2">
-                    <Link
+                    {/* <Link
                       to={"/chillers"}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -521,6 +572,63 @@ function Header() {
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       WATER COOLED CHILLER
+                    </Link> */}
+                    {/* CHILLERS with nested mobile menu */}
+                    <div>
+                      <button
+                        onClick={() => toggleMobileMenu("chillers")}
+                        className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        <span>CHILLERS</span>
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform ${
+                            mobileOpenMenus["chillers"] ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                      {mobileOpenMenus["chillers"] && (
+                        <div className="ml-4 space-y-1">
+                          <button
+                            onClick={() => {
+                              navigate("/chillers");
+                              setIsMobileMenuOpen(false);
+                            }}
+                            className="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+                          >
+                            AIR COOLED CHILLER
+                          </button>
+                          <button
+                            onClick={() => {
+                              navigate("/water-cooled-chiller");
+                              setIsMobileMenuOpen(false);
+                            }}
+                            className="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+                          >
+                            WATER COOLED CHILLER
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                    <Link
+                      to="/vrf-airconditioning"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      VRF/V AIRCONDITIONING SYSTEMS
+                    </Link>
+                    <Link
+                      to="/water-cooled-dx-unit"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      WATER COOLED DX UNIT
+                    </Link>
+                    <Link
+                      to="/ducted-split-airconditioners"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      DUCTED SPLIT AIRCONDITIONERS
                     </Link>
                   </div>
                 )}

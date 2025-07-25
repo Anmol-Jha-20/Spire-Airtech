@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ManufacturingManImage from "../../assets/ManufacturingManImage.png";
 import CncImage from "../../assets/CncImage.png";
+import { useNavigate } from "react-router-dom";
 
 const AnimatedCounter = ({ target, duration = 2000, suffix = "" }) => {
   const [count, setCount] = useState(0);
@@ -54,6 +55,7 @@ const StatCard = ({ value, suffix, label, color, delay = 0 }) => {
 };
 
 export default function ManufacturingShowcase() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-50">
       {/* SEO Meta Tags would go in document head */}
@@ -97,22 +99,33 @@ export default function ManufacturingShowcase() {
 
               <div className="text-gray-600 text-lg leading-relaxed mb-8">
                 <p className="mb-4">
-                  Covering over a hundred and thirty thousand square feet of
-                  sprawling land, our fully integrated plant is outfitted with
-                  next-generation machinery.
+                  At Spire AirTech Pvt. Ltd., we believe that technology alone
+                  isn’t enough — it must be guided by real-world needs and user
+                  experiences. That’s why our HVAC solutions are not just
+                  technically advanced, but also designed with a deep
+                  understanding of what our clients expect in terms of comfort,
+                  efficiency, and reliability.
                 </p>
 
                 <p>
-                  From turret press, CNC press brakes, polyurethane foam
-                  injections in the panel shophouses, to the recently added
-                  prefabricated ducts section equipped with one-of-its-kind,
-                  special purpose machines. While the design section boasts of
-                  the latest in computing with truly customized software's
-                  supporting product creation.
+                  Every system we design, every product we manufacture, and
+                  every project we execute is backed by practical insight from
+                  the field — because our innovations are driven by the
+                  experiences of those who use them.
+                </p>
+
+                <p>
+                  By aligning smart engineering with actual site challenges, we
+                  deliver systems that perform better, last longer, and adapt
+                  faster to real-time demands. Simply put — our technology works
+                  because it listens.
                 </p>
               </div>
 
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 flex items-center gap-2">
+              <button
+                onClick={() => navigate("/contact-us")}
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 flex items-center gap-2 cursor-pointer"
+              >
                 Know More
                 <svg
                   className="w-5 h-5"

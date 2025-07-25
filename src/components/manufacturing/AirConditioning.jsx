@@ -263,16 +263,25 @@ function AirConditioning() {
             "Versatile Fan Coil Units (FCUs) for Efficient and Zoned Heating & Cooling Applications"
           }
           image={FanCoilUnitImage}
+          description={
+            "Fan Coil Units (FCUs) are compact and flexible HVAC systems designed to provide localized heating and cooling by circulating air over a coil connected to a central water system. Ideal for residential, commercial, and hospitality environments, FCUs enable precise temperature control in individual rooms or zones, enhancing comfort and energy efficiency. Their modular design allows for easy installation and integration into both new and existing buildings."
+          }
         />
         <FanCoilsUnit
           title={"Spire Outdoor Air System"}
           shortpara={"Pure Outdoor Air, Perfected for Indoors."}
           image={OutdoorAirQualityImage}
+          description={
+            "Spire Outdoor Air System is a Dedicated Outdoor Air System (DOAS) designed to deliver fresh, filtered, and conditioned outdoor air directly into the building, independent of the main recirculated air system. It ensures continuous ventilation, improves indoor air quality, and helps maintain ideal temperature and humidity levels. By decoupling ventilation from the main HVAC load, it enhances energy efficiency while ensuring your building breathes clean, healthy air—making it especially suitable for commercial spaces, cleanrooms, and high-occupancy environments."
+          }
         />
         <FanCoilsUnit
           title={"Spire Environmental Unit (SEN)"}
           shortpara={"Revolutionizing Air Quality for a Greener Tomorrow"}
           image={IndoorAirQualityImage}
+          description={
+            "Spire Environmental Unit (SEN) is a cutting-edge HVAC solution engineered to deliver superior indoor air quality while aligning with sustainability goals and stringent regulatory standards. Designed for critical environments such as laboratories, cleanrooms, pharmaceutical facilities, and healthcare spaces, the SEN offers precise control over temperature, humidity, filtration, and pressurization. Its advanced design ensures consistent performance, energy efficiency, and compliance with industry-specific requirements for clean and controlled air."
+          }
         />
 
         {/* Bottom CTA Section */}

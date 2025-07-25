@@ -1,20 +1,16 @@
 import React, { useState } from "react";
 import { ChevronDown, Search, Phone, Menu, X } from "lucide-react";
 import AboutSection from "../components/about/AboutSection.jsx";
-import Footer from "../components/footer/Footer.jsx";
 import ProductRange from "../components/productRange/ProductRange.jsx";
 import ManufacturingShowcase from "../components/manufacturing/ManufacturingShowcase.jsx";
 import TestimonialsSection from "../components/testimonials/TestimonialsSection.jsx";
 import CertificationsCarousel from "../components/hero/Certification.jsx";
 import AffiliatesBanner from "../components/hero/AffilatesBanner.jsx";
 import SnowEffect from "../components/snow/SnowEffect.jsx";
-import Header from "../components/header/Header.jsx";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
-  // const [isProductsOpen, setIsProductsOpen] = useState(false);
-  // const [isAboutOpen, setIsAboutOpen] = useState(false);
-  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  // const [hoveredDropdown, setHoveredDropdown] = useState(null);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -44,7 +40,10 @@ export default function HomePage() {
             <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
               Spire AirTech Management System & Solutions
             </p>
-            <button className="bg-red-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition-all cursor-pointer duration-300 transform hover:scale-105 shadow-lg">
+            <button
+              onClick={() => navigate("/contact-us")}
+              className="bg-red-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition-all cursor-pointer duration-300 transform hover:scale-105 shadow-lg"
+            >
               Get Free Consultation
             </button>
           </div>

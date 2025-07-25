@@ -54,16 +54,7 @@ function FanCoilsUnit({ title, image, shortpara, description }) {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-gray-700 leading-relaxed text-lg space-y-4"
             >
-              <p>
-                Fan Coil Units (FCUs) are compact and flexible HVAC systems
-                designed to provide localized heating and cooling by circulating
-                air over a coil connected to a central water system. Ideal for
-                residential, commercial, and hospitality environments, FCUs
-                enable precise temperature control in individual rooms or zones,
-                enhancing comfort and energy efficiency. Their modular design
-                allows for easy installation and integration into both new and
-                existing buildings.
-              </p>
+              <p>{description}</p>
             </motion.div>
 
             {/* CTA Button */}

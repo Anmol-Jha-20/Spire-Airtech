@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function AboutSection() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -47,35 +49,38 @@ export default function AboutSection() {
                 About Us
               </h2>
 
-              <p className="text-lg sm:text-xl font-medium text-gray-800 leading-relaxed mb-6 lg:mb-8">
-                Spire AirTech Pvt Ltd is a privately-owned business,
-                Sister-concern Company of N&K Engineering (Established in 2017).
+              <p className="text-xl font-medium text-gray-800 leading-relaxed">
+                Spire AirTech Pvt. Ltd. is a fast-growing HVAC solutions
+                provider, offering end-to-end services across India. Founded
+                with a vision to deliver performance-driven air solutions, we
+                specialize in VRF/VRV projects, ventilation & exhaust systems,
+                chillers, AMC, and retrofitting of HVAC systems for industrial,
+                commercial, hospitality, educational, and residential sectors.
               </p>
             </div>
 
             <div className="space-y-4 lg:space-y-6">
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                We specialize in and offer a full range of services including
-                HVAC supply, Ventilation systems, Maintenance repairs,
-                Extraction systems, Commercial HVAC and Turnkey solutions.
-                Partnered with prestigious brands such as Mitsubishi, Daikin,
-                Carrier and Blue Star. Samsung, LG, Our highly trained and
-                skilled technicians will ensure that each installation exceeds
-                your expectations. Our dedicated sales and after-sale management
-                team will ensure that you will alwaysreceive a high level of
-                service.
+                What sets us apart is our deep commitment to quality, technical
+                excellence, and timely delivery. From precise design to flawless
+                execution, every project is powered by a passionate team of
+                engineers, designers, and technicians with hands-on expertise in
+                the HVAC domain.
               </p>
 
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                Trust us to deliver reliable solutions, exceptional service, and
-                peace of mind for all your HVAC needs.
+                We’re not just a contractor — we’re your project partner. Our
+                strength lies in understanding each site’s unique requirements
+                and delivering custom solutions that meet performance, budget,
+                and sustainability goals.
               </p>
             </div>
 
             <div className="pt-4">
               <button
-                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                aria-label="Learn more about Zeco Aircon"
+                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 cursor-pointer"
+                onClick={() => navigate("/contact-us")}
+                aria-label="Learn more about Spire AirTech"
               >
                 <span className="mr-2">Know More</span>
                 <svg
@@ -105,10 +110,10 @@ export default function AboutSection() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Zeco Aircon",
+            name: "Spire AirTech",
             description:
-              "Leading HVAC and Air distribution solution provider in India since 1989",
-            foundingDate: "1989",
+              "Leading HVAC and Air distribution solution provider in India since 2025",
+            foundingDate: "2025",
             industry: "HVAC Manufacturing",
             location: {
               "@type": "Place",

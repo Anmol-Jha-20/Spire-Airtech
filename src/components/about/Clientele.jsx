@@ -158,7 +158,7 @@ const ClienteleSlider = () => {
         "Educational institutions fostering learning through well-designed infrastructure.",
       gradient: "from-green-500 to-green-600",
       image:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+        "https://images.unsplash.com/photo-1603437119287-4a3732b685f9?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       title: "Hotels & Hospitality Sector",

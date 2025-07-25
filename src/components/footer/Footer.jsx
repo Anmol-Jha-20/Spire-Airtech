@@ -250,7 +250,7 @@ const ZecoFooter = () => {
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
                   </span>
-                  Infrastructure
+                  Air Conditioning
                 </a>
               </nav>
 
@@ -262,7 +262,7 @@ const ZecoFooter = () => {
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
                   </span>
-                  CSR
+                  Services
                 </a>
                 <a
                   href="#privacy"

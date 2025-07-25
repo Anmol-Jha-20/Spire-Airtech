@@ -474,6 +474,114 @@ const AboutPage = () => {
         },
       ],
     },
+    {
+      category: "Air Handling Units (AHUs)",
+      items: [
+        {
+          name: "Smart AHUs",
+          desc: "Smart AHUs are equipped with IoT and BMS integration, offering real-time monitoring, remote access, and adaptive airflow control for improved energy efficiency.",
+        },
+        {
+          name: "Pharma AHUs",
+          desc: "Designed for pharmaceutical environments, these AHUs ensure compliance with GMP standards, featuring HEPA filters and hygienic construction to maintain clean air conditions.",
+        },
+        {
+          name: "Cleanroom AHUs",
+          desc: "Cleanroom AHUs deliver precise control over temperature, humidity, and filtration, supporting ISO class compliance for controlled environments.",
+        },
+        {
+          name: "Floor Mounted AHUs",
+          desc: "These units offer high airflow capacity with easy maintenance access, ideal for large commercial and industrial spaces.",
+        },
+        {
+          name: "Ceiling Suspended AHUs",
+          desc: "Compact and lightweight, these AHUs fit above false ceilings and provide efficient air distribution for smaller or modular spaces.",
+        },
+        {
+          name: "Treated Fresh Air Units (TFA)",
+          desc: "TFAs condition and filter 100% fresh air, improving indoor air quality by reducing CO₂ and controlling humidity levels.",
+        },
+      ],
+    },
+    {
+      category: "Air Washer Units (AWUs) & Ventilation",
+      items: [
+        {
+          name: "Single Stage Air Washer",
+          desc: "A Single Stage Air Washer is an air cooling and cleaning system that uses water to both lower air temperature and remove dust or impurities.",
+        },
+        {
+          name: "Spire Indirect Direct Evaporative Cooling Unit",
+          desc: "This unit combines indirect and direct evaporative cooling to deliver energy-efficient, low-humidity fresh air, ideal for hot and dry climates without using mechanical refrigeration.",
+        },
+        {
+          name: "Fresh Air Unit",
+          desc: "A Fresh Air Unit (FAU) is a ventilation system designed to supply clean, filtered outdoor air into indoor spaces.",
+        },
+        {
+          name: "Exhaust Air Unit",
+          desc: "An Exhaust Air Unit (EAU) is a ventilation system designed to remove stale, contaminated, or humid air from indoor spaces.",
+        },
+        {
+          name: "Dry Scrubber (Kitchen Exhaust Unit)",
+          desc: "A Dry Scrubber (Kitchen Exhaust Unit) is an air filtration system used to remove grease, smoke, odors, and airborne pollutants from kitchen exhaust air without using water. ",
+        },
+        {
+          name: "Wet Scrubber",
+          desc: "A Wet Scrubber is an air pollution control device that removes contaminants from exhaust gases by spraying them with water or a scrubbing solution.",
+        },
+      ],
+    },
+    {
+      category: "Fan Coil Units (FCUs)",
+      items: [
+        {
+          name: "Ceiling Concealed FCU",
+          desc: "Hidden above false ceilings, these units offer quiet operation and clean aesthetics for offices and hospitality spaces.",
+        },
+        {
+          name: "Wall-Mounted FCU",
+          desc: "Sleek and easy to install, these FCUs are ideal for residential and light commercial use with direct air throw.",
+        },
+        {
+          name: "Cassette Type FCU",
+          desc: "Ceiling-mounted with 4-way airflow, perfect for uniform cooling in retail, offices, and conference rooms.",
+        },
+        {
+          name: "Floor Standing FCU",
+          desc: "Free-standing and powerful, used in areas where ceiling or wall space is limited or unavailable.",
+        },
+        {
+          name: "Spire Outdoor Air System",
+          desc: "A high-efficiency system that brings in 100% filtered and conditioned outdoor air with heat recovery, improving IAQ and reducing HVAC load.",
+        },
+        {
+          name: "Spire Environmental Unit (SEN)",
+          desc: "Precision-controlled unit for cleanrooms, labs, and healthcare, offering advanced filtration, humidity, and temperature control.",
+        },
+      ],
+    },
+    {
+      category: "Heat Exchanger Coils & Ducts",
+      items: [
+        {
+          name: "Chilled Water Coil",
+          desc: "Used for air cooling in AHUs and FCUs, these coils circulate chilled water through copper tubes with aluminum fins.",
+        },
+        {
+          name: "Hot Water / Steam Coil",
+          desc: "Designed for heating applications using hot water or steam, commonly used in colder climates and reheat systems.",
+        },
+        {
+          name: "DX Coil",
+          desc: "A direct expansion coil that uses refrigerant for rapid cooling, typically found in split units and VRF systems.",
+        },
+        {
+          name: "Air Distribution Ducts",
+          desc: "Ducts carry conditioned air throughout the building using GI or aluminum sheets, with optional insulation to reduce energy loss and noise.",
+        },
+      ],
+    },
   ];
 
   const hvacSystems = [
@@ -482,6 +590,14 @@ const AboutPage = () => {
     "Cassette ACs",
     "Water-Cooled DX Systems",
     "Air-Cooled and Water-Cooled Chillers",
+    "AHU (Air Handling Unit)",
+    "AWU (Air Washer Unit)",
+    "Fan Coils Units(FCUs)",
+    "Spire Outdoor Air System",
+    "Spire Environmental Unit (SEN)",
+    "Ventilation Solutions",
+    "Heat Exchanger Coils",
+    "Air Distribution Ducts",
   ];
 
   const whyChooseUs = [
@@ -599,28 +715,25 @@ const AboutPage = () => {
                   Your Climate Control Partner
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                  <strong>Spire AirTech Pvt. Ltd.</strong> is proud to be an{" "}
-                  <strong className="text-blue-600">
-                    Authorized Channel Partner of Blue Star
-                  </strong>
-                  , offering a full range of commercial air conditioning systems
-                  along with{" "}
-                  <strong className="text-blue-600">
-                    in-house manufacturing of high-quality HVAC components
-                  </strong>
-                  , including{" "}
-                  <strong className="text-blue-600">
-                    all types of Air Grills and Dampers.
-                  </strong>
+                  At <strong>Spire AirTech Pvt. Ltd.</strong>, we don’t just
+                  deliver HVAC systems — we build environments tailored for
+                  comfort, efficiency, and reliability. As your trusted Climate
+                  Control Partner, we take complete responsibility for
+                  analyzing, designing, installing, and maintaining air systems
+                  that perform optimally in every season, space, and situation.
                 </p>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  We specialize in{" "}
-                  <strong className="text-blue-600">
-                    turnkey HVAC solutions
-                  </strong>{" "}
-                  for commercial and industrial projects—covering everything
-                  from system design and product supply to installation and
-                  after-sales service.
+                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  Whether it’s a high-end VRF system, a large-scale chiller
+                  plant, or a customized ventilation solution — we engineer
+                  every component with precision and purpose. From initial
+                  consultation to post-installation support, our team ensures
+                  seamless execution and long-term performance.
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  Choose <strong>Spire AirTech</strong> for intelligent climate
+                  control — because we believe that air quality, temperature,
+                  and energy efficiency aren’t just technical needs, they’re
+                  your everyday essentials.
                 </p>
               </AnimatedSection>
               <AnimatedSection delay={600}>
@@ -786,7 +899,6 @@ const AboutPage = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Our HVAC System Offerings
               </h2>
-              <p className="text-xl text-blue-100">Blue Star Products</p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {hvacSystems.map((system, index) => (
