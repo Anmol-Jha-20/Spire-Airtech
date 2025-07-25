@@ -291,9 +291,14 @@ function Header() {
         <div className="flex justify-between items-center h-16 md:h-20">
           <div className="flex-shrink-0">
             <div className="flex items-center">
-              <div className="text-2xl md:text-3xl font-bold text-blue-600">
+              {/* <div className="text-2xl md:text-3xl font-bold text-blue-600">
                 Spire AirTech
-              </div>
+              </div> */}
+              <img
+                src={"Logo.png"}
+                className="h-10 md:h-12 lg:h-12 object-contain"
+                alt=""
+              />
             </div>
           </div>
 
