@@ -139,12 +139,13 @@ const ZecoFooter = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
-  const handleSubscribe = () => {
-    if (email.trim()) {
-      // Handle subscription logic here
-      console.log("Subscribing email:", email);
-      setEmail("");
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (!email) {
+      return alert("Please enter a valid email address.");
     }
+    alert("Thank you for subscribing! 🎉");
+    setEmail("");
   };
 
   return (
@@ -333,20 +334,21 @@ const ZecoFooter = () => {
             {/* Email Subscription */}
             <div className="space-y-4">
               <div className="relative">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your mail here"
-                  className="w-full px-6 py-4 rounded-lg bg-white/90 backdrop-blur-sm text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-white/30 focus:bg-white transition-all duration-300"
-                />
-                <button
-                  onClick={handleSubscribe}
-                  className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
-                  aria-label="Subscribe to newsletter"
-                >
-                  <Mail size={20} />
-                </button>
+                <form onSubmit={handleSubscribe}>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your mail here"
+                    className="w-full px-6 py-4 rounded-lg bg-white/90 backdrop-blur-sm text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-white/30 focus:bg-white transition-all duration-300"
+                  />
+                  <button
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
+                    aria-label="Subscribe to newsletter"
+                  >
+                    <Mail size={20} />
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -358,11 +360,7 @@ const ZecoFooter = () => {
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-white font-bold text-center sm:text-left">
-              ©2025 All Rights Reserved | Spire AirTech Private Limited |
-              Designed By{" "}
-              <a target="_main" href="https://webvortexsolutions.com/">
-                webvortexsolutions
-              </a>
+              ©2025 All Rights Reserved | Spire AirTech Private Limited
             </p>
             <a
               href="#sitemap"

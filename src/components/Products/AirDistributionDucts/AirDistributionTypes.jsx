@@ -135,7 +135,10 @@ const AirDistributionTypes = () => {
             ))}
           </motion.div>
         </motion.div>
-        <button className="bg-blue-600 hover:bg-blue-700 rounded cursor-pointer text-white px-6 py-4 text-lg font-medium tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl">
+        <button
+          onClick={() => (window.location.href = "tel:919311778119")}
+          className="bg-blue-600 hover:bg-blue-700 rounded cursor-pointer text-white px-6 py-4 text-lg font-medium tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
           CONSULT OUR SPIRE EXPERTS
         </button>
       </div>

@@ -406,12 +406,15 @@ const ServicesPage = () => {
             Contact us today for all your HVAC maintenance and repair needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300">
-              Get Quote
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300">
+            <button
+              onClick={() => (window.location.href = "tel:919311778119")}
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 cursor-pointer transition-colors duration-300"
+            >
               Contact Us
             </button>
+            {/* <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300">
+              Contact Us
+            </button> */}
           </div>
         </div>
       </section>

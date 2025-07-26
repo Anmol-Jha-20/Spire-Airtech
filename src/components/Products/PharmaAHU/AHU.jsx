@@ -64,7 +64,10 @@ const AHU = ({ heading, title, description, image }) => {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 className="pt-6"
               >
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 uppercase tracking-wide text-sm">
+                <button
+                  onClick={() => (window.location.href = "tel:919311778119")}
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 cursor-pointer rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 uppercase tracking-wide text-sm"
+                >
                   CONSULT OUR SPIRE EXPERTS
                 </button>
               </motion.div>

@@ -406,7 +406,7 @@ function Header() {
                     to="/vrf-airconditioning"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    VRF/V AIRCONDITIONING SYSTEMS
+                    VRF/VRV AIRCONDITIONING SYSTEMS
                   </Link>
                   <Link
                     to="/water-cooled-dx-unit"
@@ -619,7 +619,7 @@ function Header() {
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      VRF/V AIRCONDITIONING SYSTEMS
+                      VRF/VRV AIRCONDITIONING SYSTEMS
                     </Link>
                     <Link
                       to="/water-cooled-dx-unit"

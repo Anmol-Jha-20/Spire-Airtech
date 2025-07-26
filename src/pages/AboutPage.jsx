@@ -968,12 +968,15 @@ const AboutPage = () => {
                 reliability with our comprehensive HVAC solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-                  Get Quote
-                </button>
-                <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                <button
+                  onClick={() => (window.location.href = "tel:919311778119")}
+                  className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold cursor-pointer hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+                >
                   Contact Us
                 </button>
+                {/* <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                  Contact Us
+                </button> */}
               </div>
             </div>
           </div>

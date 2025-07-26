@@ -1,22 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  ChevronRight,
-  Wind,
-  Zap,
-  Shield,
-  Thermometer,
-  Filter,
-  Fan,
-  Cpu,
-  Building,
-  ArrowRight,
-} from "lucide-react";
-import WebSucrubber from "../../assets/WebScruber.png";
-import ExhaustAirUnit from "../../assets/ExhaustAirUnit.jpeg";
-import FreshAirUnit from "../../assets/FreshAirUnit.jpeg";
+import { ChevronRight, ArrowRight } from "lucide-react";
 import DryScruber from "../../assets/DryScruber.jpeg";
 import WaterCooledAirPackage from "../../assets/WaterCooledAirPackaged.png";
+import AboutImage from "../../assets/AboutImage.jpeg";
 
 const FdvFan = () => {
   const [activeProduct, setActiveProduct] = useState(null);
@@ -52,7 +39,7 @@ const FdvFan = () => {
           title: "Water Cooled Air Handling Units (AHUs)",
           description:
             "These units are designed for precise temperature control in commercial air conditioning systems. The water-cooled design allows them to operate efficiently in larger buildings, optimizing cooling capacity and reducing energy consumption. These AHUs offer superior air quality and comfort by maintaining consistent airflow, temperature, and humidity levels across large spaces. With a focus on reducing energy usage and ensuring seamless integration with other HVAC systems, these units provide optimal climate control and improved indoor air quality, making them ideal for offices, hospitals, and large commercial establishments.",
-          image: WebSucrubber,
+          image: AboutImage,
           specs: ["Automated Control", "Energy Saving", "Advance"],
         },
       ],
@@ -102,9 +89,9 @@ const FdvFan = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-wrap justify-center gap-4"
           >
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 flex items-center gap-2 cursor-pointer">
+            {/* <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 flex items-center gap-2 cursor-pointer">
               Get Quote <ArrowRight className="w-5 h-5" />
-            </button>
+            </button> */}
             {/* <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300">
               Get Quote
             </button> */}
@@ -172,7 +159,10 @@ const FdvFan = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <button className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl font-medium">
+                  <button
+                    onClick={() => (window.location.href = "tel:919311778119")}
+                    className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl font-medium"
+                  >
                     <span>Contact Us</span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>

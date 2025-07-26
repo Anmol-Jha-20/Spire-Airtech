@@ -64,7 +64,10 @@ function FanCoilsUnit({ title, image, shortpara, description }) {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="pt-6"
             >
-              <button className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl font-medium">
+              <button
+                onClick={() => (window.location.href = "tel:919311778119")}
+                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl font-medium"
+              >
                 <span>Contact Us</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>

@@ -15,10 +15,7 @@ export default function HomePage() {
   return (
     <>
       <div className="min-h-screen bg-gray-50">
-        <title>
-          Spire AirTech Management System & Solutions - Indian Made, Globally
-          Certified
-        </title>
+        <title>Spire AirTech Private Limited</title>
 
         {/* Header */}
 

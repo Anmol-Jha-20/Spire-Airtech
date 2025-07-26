@@ -262,6 +262,10 @@ const VRFAirconditioning = () => {
         "Perfect climate control for our office spaces. The system is whisper quiet and incredibly reliable.",
     },
   ];
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Quote request submitted! We will contact you soon.");
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -329,7 +333,7 @@ const VRFAirconditioning = () => {
             <div className="space-y-6">
               <div>
                 <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
-                  VRF & V Air Conditioning Systems
+                  VRF & VRV Air Conditioning Systems
                 </h1>
                 <p className="text-xl text-blue-600 font-semibold mb-4">
                   Premium Commercial Solution
@@ -352,11 +356,12 @@ const VRFAirconditioning = () => {
                 </div> */}
 
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Advanced Variable Refrigerant Flow (VRF) technology delivers
-                  unparalleled energy efficiency and precise climate control for
-                  commercial and large residential applications. Experience
-                  superior comfort with intelligent zone control and
-                  whisper-quiet operation.
+                  Advanced Variable Refrigerant Flow (VRF) and Variable
+                  Refrigerant Volume(VRV) technology delivers unparalleled
+                  energy efficiency and precise climate control for commercial
+                  and large residential applications. Experience superior
+                  comfort with intelligent zone control and whisper-quiet
+                  operation.
                 </p>
               </div>
 
@@ -387,7 +392,10 @@ const VRFAirconditioning = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                <button
+                  onClick={() => (window.location.href = "tel:919311778119")}
+                  className="bg-blue-600 text-white px-8 py-3 rounded-lg cursor-pointer font-semibold hover:bg-blue-700 transition-colors"
+                >
                   Get Quote
                 </button>
                 {/* <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
@@ -594,39 +602,40 @@ const VRFAirconditioning = () => {
                   Request a Quote
                 </h3>
                 <div className="space-y-4">
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <form onSubmit={handleSubmit}>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                        required
+                      />
+                      <input
+                        type="email"
+                        placeholder="Email Address"
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                        required
+                      />
+                    </div>
                     <input
-                      type="text"
-                      placeholder="Your Name"
+                      type="tel"
+                      placeholder="Phone Number"
                       className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                      required
                     />
-                    <input
-                      type="email"
-                      placeholder="Email Address"
+                    <textarea
+                      rows={4}
+                      placeholder="Project Details"
                       className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                      required
                     />
-                  </div>
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                  />
-                  <textarea
-                    rows={4}
-                    placeholder="Project Details"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                  />
-                  <button
-                    type="button"
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                    onClick={() =>
-                      alert(
-                        "Quote request submitted! We will contact you soon."
-                      )
-                    }
-                  >
-                    Get Free Quote
-                  </button>
+                    <button
+                      type="submit"
+                      className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer"
+                    >
+                      Get Free Quote
+                    </button>
+                  </form>
                 </div>
               </div>
 

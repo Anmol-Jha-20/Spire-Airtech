@@ -294,7 +294,10 @@ function AirConditioning() {
               Get in touch with our experts to find the perfect air conditioning
               solution for your needs.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:bg-gray-50 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105">
+            <button
+              onClick={() => (window.location.href = "tel:919311778119")}
+              className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold cursor-pointer hover:bg-gray-50 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
               Contact Us Today
             </button>
           </div>
