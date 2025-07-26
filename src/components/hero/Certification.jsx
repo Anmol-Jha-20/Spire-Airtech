@@ -278,7 +278,7 @@ const CertificationsCarousel = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6">
         {/* Left Title */}
         <div
-          className="bg-blue-600 text-white w-full md:w-[350px] h-[200px] flex flex-col items-center justify-center py-10 bg-cover bg-center"
+          className="bg-blue-600 text-white w-full md:w-[350px] h-[100px] md:h-[200px] lg:h-[200px] flex flex-col items-center justify-center py-10 bg-cover bg-center"
           style={{ backgroundImage: `url(${FooterImage})` }}
         >
           <h2 className="text-3xl font-semibold">Certifications</h2>
@@ -305,7 +305,7 @@ const CertificationsCarousel = () => {
               <img
                 src={cert.logo}
                 alt={cert.alt}
-                className="h-24 md:h-72 object-contain shadow-md rounded-md"
+                className="h-72 object-contain shadow-md rounded-md"
                 loading="lazy"
               />
             </div>
@@ -314,7 +314,7 @@ const CertificationsCarousel = () => {
 
         {/* Right Blank Block */}
         <div
-          className="bg-blue-600 w-full md:w-[280px] h-[200px] py-10 bg-cover bg-center"
+          className="bg-blue-600 w-full md:w-[280px] h-[100px] md:h-[200px] lg:h-[200px] py-10 bg-cover bg-center"
           style={{ backgroundImage: `url(${FooterImage})` }}
         ></div>
       </div>
