@@ -123,7 +123,7 @@
 import React, { useState } from "react";
 import { Mail } from "lucide-react";
 import FooterImage from "../../assets/FooterImage.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import {
   FaFacebookF,
@@ -222,7 +222,7 @@ const ZecoFooter = () => {
             </div>
           </div>
 
-          <div className="fixed bottom-6 left-6 z-50">
+          <div className="fixed bottom-6 left-0 z-50">
             <button
               onClick={() =>
                 window.open(
@@ -236,7 +236,7 @@ const ZecoFooter = () => {
               <FaWhatsapp size={24} />
             </button>
           </div>
-          <div className="fixed bottom-6 right-6 z-50">
+          <div className="fixed bottom-6 right-0 z-50">
             <button
               onClick={() => (window.location.href = "tel:919311778119")}
               className="bg-[#1C398E] cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
@@ -258,7 +258,7 @@ const ZecoFooter = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <nav className="space-y-4">
                 <a
-                  href="#about"
+                  href="/about-us"
                   className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
@@ -267,7 +267,7 @@ const ZecoFooter = () => {
                   About Us
                 </a>
                 <a
-                  href="#partner"
+                  href="/contact-us"
                   className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
@@ -276,7 +276,7 @@ const ZecoFooter = () => {
                   Partner With Us
                 </a>
                 <a
-                  href="#infrastructure"
+                  href="/air-conditioning"
                   className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
@@ -288,7 +288,7 @@ const ZecoFooter = () => {
 
               <nav className="space-y-4">
                 <a
-                  href="#csr"
+                  href="/services"
                   className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
@@ -306,7 +306,7 @@ const ZecoFooter = () => {
                   Privacy Policy
                 </a>
                 <a
-                  href="#contact"
+                  href="/contact-us"
                   className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">

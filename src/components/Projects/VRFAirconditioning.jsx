@@ -640,7 +640,7 @@ const VRFAirconditioning = () => {
                 <div className="text-center p-6 border-2 border-gray-200 rounded-lg">
                   <Mail className="w-8 h-8 text-blue-600 mx-auto mb-3" />
                   <h4 className="font-semibold text-gray-900 mb-2">Email Us</h4>
-                  <p className="text-gray-600">info@airtech.com</p>
+                  <p className="text-gray-600">sales@spireairtech.com</p>
                 </div>
 
                 <div className="text-center p-6 border-2 border-gray-200 rounded-lg">

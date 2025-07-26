@@ -128,7 +128,7 @@ const ContactPage = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Address",
-      content: "contact@company.com",
+      content: "sales@spireairtech.com",
       subcontent: "We'll respond within 24 hours",
       color: "bg-purple-100 text-purple-600",
     },
