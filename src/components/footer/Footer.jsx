@@ -123,6 +123,7 @@
 import React, { useState } from "react";
 import { Mail } from "lucide-react";
 import FooterImage from "../../assets/FooterImage.png";
+import { useNavigate } from "react-router-dom";
 
 import {
   FaFacebookF,
@@ -130,10 +131,13 @@ import {
   FaLinkedinIn,
   FaYoutube,
   FaInstagram,
+  FaWhatsapp,
 } from "react-icons/fa";
+import { MdCall } from "react-icons/md";
 
 const ZecoFooter = () => {
   const [email, setEmail] = useState("");
+  const navigate = useNavigate();
 
   const handleSubscribe = () => {
     if (email.trim()) {
@@ -161,12 +165,16 @@ const ZecoFooter = () => {
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
-          {/* ZECO AIRCON Section */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-xl font-bold mb-6 text-blue-700 md:text-white">
+              {/* <h2 className="text-xl font-bold mb-6 text-blue-700 md:text-white">
                 Spire AirTech
-              </h2>
+              </h2> */}
+              <img
+                src="Logo.png"
+                className="h-10 md:h-12 lg:h-12 rounded object-contain"
+                alt="Logo"
+              />
               <div className="w-12 h-0.5 bg-white mb-8"></div>
               <p className="md:text-blue-100 text-white leading-relaxed text-lg">
                 Spire AirTech is Pioneer in manufacturing of central air
@@ -212,6 +220,30 @@ const ZecoFooter = () => {
                 <FaInstagram size={20} />
               </a>
             </div>
+          </div>
+
+          <div className="fixed bottom-6 left-6 z-50">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://wa.me/919311778119?text=Hey!%20I%20am%20interested%20in%20your%20services.",
+                  "_blank"
+                )
+              }
+              className="bg-green-600 hover:bg-green-700 cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+              aria-label="Need Help?"
+            >
+              <FaWhatsapp size={24} />
+            </button>
+          </div>
+          <div className="fixed bottom-6 right-6 z-50">
+            <button
+              onClick={() => (window.location.href = "tel:919311778119")}
+              className="bg-[#1C398E] cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 animate-bounce"
+              aria-label="Need Help?"
+            >
+              <MdCall size={24} />
+            </button>
           </div>
 
           {/* USEFUL LINKS Section */}
@@ -326,7 +358,11 @@ const ZecoFooter = () => {
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-white font-bold text-center sm:text-left">
-              ©2025 All Rights Reserved | Spire AirTech Ltd.
+              ©2025 All Rights Reserved | Spire AirTech Private Limited |
+              Designed By{" "}
+              <a target="_main" href="https://webvortexsolutions.com/">
+                webvortexsolutions
+              </a>
             </p>
             <a
               href="#sitemap"

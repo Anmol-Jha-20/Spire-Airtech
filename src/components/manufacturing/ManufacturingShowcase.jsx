@@ -149,7 +149,7 @@ export default function ManufacturingShowcase() {
         <div className="bg-white rounded-lg shadow-lg p-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8">
             <StatCard
-              value={69500}
+              value={1500}
               suffix="+"
               label="Successful Projects"
               color="bg-red-500"
@@ -157,7 +157,7 @@ export default function ManufacturingShowcase() {
             />
 
             <StatCard
-              value={140500}
+              value={10500}
               suffix="+"
               label="Units Delivered"
               color="bg-blue-500"
@@ -173,7 +173,7 @@ export default function ManufacturingShowcase() {
             />
 
             <StatCard
-              value={160}
+              value={8}
               suffix=" Millions+"
               label="Sq M Of Air Purification"
               color="bg-red-500"
