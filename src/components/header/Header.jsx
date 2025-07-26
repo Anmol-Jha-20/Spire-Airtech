@@ -297,7 +297,7 @@ function Header() {
               <img
                 src={"Logo.png"}
                 className="h-10 md:h-12 lg:h-12 object-contain"
-                alt=""
+                alt="Logo"
               />
             </div>
           </div>

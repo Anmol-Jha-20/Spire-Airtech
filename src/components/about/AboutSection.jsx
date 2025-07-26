@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import AboutImage from "../../assets/AboutImage.jpeg";
 
 export default function AboutSection() {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ export default function AboutSection() {
               {/* Main image container */}
               <div className="relative z-10 bg-white p-3 sm:p-4 rounded-lg shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                  src={AboutImage}
                   alt="Zeco Aircon manufacturing facility aerial view showing modern industrial complex with buildings and facilities"
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg"
                 />
@@ -40,16 +41,19 @@ export default function AboutSection() {
           {/* Right Side - Content */}
           <div className="order-1 lg:order-2 space-y-6 lg:space-y-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-              <h1 className="text-xl font-semibold text-gray-800">
+              {/* <h1 className="text-xl font-semibold text-gray-800">
                 Best HVAC Manufacturing Company
-              </h1>
+              </h1> */}
             </div>
             <div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 lg:mb-6">
                 About Us
               </h2>
+              <p className="text-xl font-medium text-gray-800 leading-relaxed mb-5">
+                Top HVAC Manufacturing, Projects, and Services Company
+              </p>
 
-              <p className="text-xl font-medium text-gray-800 leading-relaxed">
+              <p className="text-xl text-gray-800 leading-relaxed">
                 Spire AirTech Pvt. Ltd. is a fast-growing HVAC solutions
                 provider, offering end-to-end services across India. Founded
                 with a vision to deliver performance-driven air solutions, we
